@@ -1,18 +1,24 @@
+using System;
 using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-        Debug.Log("Selam�n Aleyk�m");
     
+    
+    private void Awake()
+    {
+        Debug.Log("Script Yüklendi");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        Debug.Log("Start: Oyun Başladı");
     }
+
+    private void Update()
+    {
+        Debug.Log("Update: Her Frame'de çalışıyor");
+    }
+    
+    
 }
