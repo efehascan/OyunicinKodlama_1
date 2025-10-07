@@ -13,19 +13,19 @@ public class Donguler : MonoBehaviour
             {
                 count++;
                 //Debug.Log(count);
+                // Buradaki debug.log i sayısı her 2ye bölündüğünde çalışır bu sayede her seferinde 1,2,3,4... diye gider
+                
             }
-
-
+            
+            //Debug.Log(count);
+            // Buradaki debug.log for döngüsünde her tekrarda çalışır bu sayede count artmadan aynı Debug birden fazla kez konsola yazdırır
+                
+            
              Debug.Log(i);
+             // Burada döngüde sıra hangi sayıda onu görmemizi sağlar her döngüye giren i sayısını konsola yazdırırız.
         }
         
-        
-            //Debug.Log(count);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //Debug.Log(count);
+        // Buradaki Debug.Log Döngü bittiğinde direkt olarak sonucu konsola yazdırır    
     }
 }

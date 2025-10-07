@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KosullarDonguler : MonoBehaviour
+public class Kosullar : MonoBehaviour
 {
     private bool isRaining = true;
     private bool isTraffic = true;
