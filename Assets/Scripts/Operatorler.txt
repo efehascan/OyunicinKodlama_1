@@ -1,0 +1,32 @@
+// Unity C# - Temel Operatörler
+
+// 1. Aritmetik Operatörler (Matematiksel işlemler)
+// + : Toplama -> a + b
+// - : Çıkarma -> a - b
+// * : Çarpma -> a * b
+// / : Bölme -> a / b
+// % : Mod (kalan) -> a % b
+
+// 2. Atama Operatörleri (Değer atamak için)
+// =  : Atama -> a = 5
+// += : Toplayarak atama -> a += 3
+// -= : Çıkararak atama -> a -= 2
+
+// 3. Karşılaştırma Operatörleri (true / false döner)
+// == : Eşit mi -> a == b
+// != : Eşit değil mi -> a != b
+// >  : Büyüktür -> a > b
+// <  : Küçüktür -> a < b
+
+// 4. Mantıksal Operatörler (Koşulları birleştirmek için)
+// && : VE -> (a > 0 && b > 0)
+// || : VEYA -> (a > 0 || b > 0)
+// !  : DEĞİL -> !(a > b)
+
+// 5. Artırma / Azaltma Operatörleri
+// ++ : 1 artırır -> a++
+// -- : 1 azaltır -> a--
+
+// 6. Üçlü (Ternary) Operatör
+// (koşul) ? değer1 : değer2
+// int max = (a > b) ? a : b;
