@@ -4,6 +4,22 @@ public class Donguler : MonoBehaviour
 {
     private int maxValue = 100;
     private int count = 0;
+    
+    /*
+     *
+     * `for` döngüsü, belirli bir sayıda tekrarı ifade eder. Genellikle bir sayaç kullanarak belirli bir koşul sağlandığı sürece döngüyü çalıştırır.
+       
+       Yapısı:
+       for (başlangıç_değeri; koşul; artış) {
+           // Tekrar eden kod bloğu
+       }
+
+       Örnek:
+       for (int i = 0; i < 5; i++) {
+           Console.WriteLine("i: " + i);
+       }
+     * 
+     */
 
     void Start()
     {
