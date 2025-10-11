@@ -33,6 +33,26 @@ public class Kosullar : MonoBehaviour
         {
             Debug.Log(message3);
         }
+        
+        /*
+        
+        If-Else: Belirli bir koşulun doğru veya yanlış olup olmadığını kontrol etmek için kullanılır.
+            Genel yapı:
+        if (koşul)
+        {
+            // Koşul doğruysa çalışacak kod
+        }
+        else if (koşul2)
+        {
+            // İkinci koşul doğruysa çalışacak kod
+        }
+        else
+        {
+            // Koşullar sağlanmazsa çalışacak kod
+        }
+        
+        */
+        
 
     }
 }
