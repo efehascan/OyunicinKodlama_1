@@ -21,23 +21,23 @@ public class KosullarOrnekler : MonoBehaviour
     
     */
 
-    int ogrenciNot = 85;
+    int ogrenciNot = 90;
 
     private void Start()
     {
         switch (ogrenciNot)
         {
             case 100:
-                Console.WriteLine("Mükemmel not!");
+                Debug.Log("Mükemmel not!");
                 break;
             case 85:
-                Console.WriteLine("Çok iyi!");
+                Debug.Log("Çok iyi!");
                 break;
             case 70:
-                Console.WriteLine("İyi.");
+                Debug.Log("İyi.");
                 break;
             default:
-                Console.WriteLine("Belirtilmemiş not");
+                Debug.Log("Belirtilmemiş not");
                 break;
         }
     }

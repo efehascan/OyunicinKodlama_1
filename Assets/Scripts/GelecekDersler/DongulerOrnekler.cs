@@ -19,13 +19,15 @@ public class DongulerOrnekler : MonoBehaviour
     
     private void Start()
     {
-        
+        DoWhileDongu();
     }
 
     private void WhileDongu()
     {
         int count = 0;
-        while (count < 5) {
+        
+        while (count < 5)
+        {
             Debug.Log("Count: " + count);
             count++;
         }
@@ -35,7 +37,7 @@ public class DongulerOrnekler : MonoBehaviour
     {
         List<string> names = new List<string> { "Alice", "Bob", "Charlie" };
         foreach (string name in names) {
-            Console.WriteLine("Name: " + name);
+            Debug.Log("Name: " + name);
         }
     }
 
@@ -43,7 +45,7 @@ public class DongulerOrnekler : MonoBehaviour
     {
         int number = 0;
         do {
-            Console.WriteLine("Number: " + number);
+            Debug.Log("Number: " + number);
             number++;
         } while (number < 5);
     }
