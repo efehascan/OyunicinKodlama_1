@@ -25,20 +25,26 @@ public class KosullarOrnekler : MonoBehaviour
 
     private void Start()
     {
-        switch (ogrenciNot)
+        int diploma = 85;
+
+        switch (diploma)
         {
-            case 100:
-                Debug.Log("Mükemmel not!");
+            case >= 90 and <= 100:
+                Debug.Log("AA");
                 break;
-            case 85:
-                Debug.Log("Çok iyi!");
+
+            case >= 80 and < 90:
+                Debug.Log("BA");
                 break;
-            case 70:
-                Debug.Log("İyi.");
+
+            case >= 70 and < 80:
+                Debug.Log("BB");
                 break;
+
             default:
-                Debug.Log("Belirtilmemiş not");
+                Debug.Log("Geçersiz Not");
                 break;
         }
+
     }
 }
