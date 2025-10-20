@@ -20,8 +20,7 @@ public class KosullarOrnekler : MonoBehaviour
     }
     
     */
-
-    int ogrenciNot = 90;
+    
 
     private void Start()
     {
