@@ -39,8 +39,7 @@ namespace Ders6
                 _rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
         }
-
-        private void 
+        
         
         private void OnCollisionStay(Collision collision)
         {
