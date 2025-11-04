@@ -14,12 +14,12 @@ public class DongulerOrnekler : MonoBehaviour
        Programlama dillerinde yaygın olarak kullanılan döngü türleri arasında `for`, `foreach`, `while` ve `do-while` döngüleri bulunmaktadır.
  
      */
-    
-    
-    
+
+
+
     private void Start()
     {
-        DoWhileDongu();
+        WhileDongu();
     }
 
     private void WhileDongu()
