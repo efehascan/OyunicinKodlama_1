@@ -42,12 +42,12 @@ namespace Ders6
             }
         }
 
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider collision)
         {
             if (collision.gameObject.CompareTag("Red"))
             {
-                _renderer.material.color = Color.red;   
-            } 
+                _renderer.material.color = Color.red;
+            }
             else if (collision.gameObject.CompareTag("Green"))
             {
                 _renderer.material.color = Color.green;
