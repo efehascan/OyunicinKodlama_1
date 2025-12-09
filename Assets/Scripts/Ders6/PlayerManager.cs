@@ -21,6 +21,11 @@ namespace Ders6
             _calgiciKarisi = GetComponent<AudioSource>();
         }
 
+        private void Start()
+        {
+            _calgiciKarisi.Play();
+        }
+
         private void Update()   
         {
             Movement();
