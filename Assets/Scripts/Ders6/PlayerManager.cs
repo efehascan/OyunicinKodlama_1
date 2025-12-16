@@ -7,29 +7,31 @@ namespace Ders6
     {
         [SerializeField] private float moveSpeed;
         [SerializeField] private float jumpForce;
-        [SerializeField] private AudioClip blink;
+        [SerializeField] private AudioClip blink; 
+
 
         private Renderer _renderer;        
         private Rigidbody _rb;
         private AudioSource _calgiciKarisi;
         private bool _isGrounded;
-        
+        private Animator _mainAnim;
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();
             _renderer = GetComponent<Renderer>();
             _calgiciKarisi = GetComponent<AudioSource>();
-        }
-
-        private void Start()
-        {
-            _calgiciKarisi.Play();
+            _mainAnim = GetComponent<Animator>();
         }
 
         private void Update()   
         {
             Movement();
             Jump();
+            Debug.Log(_rb.linearVelocity.magnitude);
+
+            _mainAnim.SetFloat("speed", _rb.linearVelocity.magnitude);
+            _mainAnim.SetBool("isJumping", !_isGrounded);
         }
 
         private void Movement()
@@ -47,6 +49,7 @@ namespace Ders6
             if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
             {
                 _rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
             }
         }
 
