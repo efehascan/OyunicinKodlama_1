@@ -24,7 +24,7 @@ public class KosullarOrnekler : MonoBehaviour
 
     private void Start()
     {
-        int diploma = 85;
+        int diploma = 120;
 
         switch (diploma)
         {

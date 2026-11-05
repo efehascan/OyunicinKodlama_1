@@ -5,7 +5,7 @@ namespace GelecekDersler
 {
     public class BallManager : MonoBehaviour
     {
-        private float speed = 3f;
+        [SerializeField] private float speed = 3f;
 
         private void Update()
         {
@@ -32,7 +32,7 @@ namespace GelecekDersler
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Trigger!");
+            Debug.Log("efe!");
         }
         
         

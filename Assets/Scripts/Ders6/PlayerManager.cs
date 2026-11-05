@@ -7,12 +7,10 @@ namespace Ders6
     {
         [SerializeField] private float moveSpeed;
         [SerializeField] private float jumpForce;
-        [SerializeField] private AudioClip blink; 
 
 
         private Renderer _renderer;        
         private Rigidbody _rb;
-        private AudioSource _calgiciKarisi;
         private bool _isGrounded;
         private Animator _mainAnim;
 
@@ -20,7 +18,6 @@ namespace Ders6
         {
             _rb = GetComponent<Rigidbody>();
             _renderer = GetComponent<Renderer>();
-            _calgiciKarisi = GetComponent<AudioSource>();
             _mainAnim = GetComponent<Animator>();
         }
 
@@ -57,22 +54,22 @@ namespace Ders6
         {
             if (collision.gameObject.CompareTag("Red"))
             {
-                _calgiciKarisi.PlayOneShot(blink);
+                
                 _renderer.material.color = Color.red;
             }
             else if (collision.gameObject.CompareTag("Green"))
             {
-                _calgiciKarisi.PlayOneShot(blink);
+                
                 _renderer.material.color = Color.green;
             }
             else if (collision.gameObject.CompareTag("Blue"))
             {
-                _calgiciKarisi.PlayOneShot(blink);
+                
                 _renderer.material.color = Color.blue;
             }
             else if (collision.gameObject.CompareTag("Yellow"))
             {
-                _calgiciKarisi.PlayOneShot(blink);
+              
                 _renderer.material.color = Color.yellow;
             }
         }
